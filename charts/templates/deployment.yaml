@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "cpp_streamer.fullname" . }}
+  name: {{ include "cpp-streamer.fullname" . }}
   labels:
-    {{- include "cpp_streamer.labels" . | nindent 4 }}
+    {{- include "cpp-streamer.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
