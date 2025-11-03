@@ -43,14 +43,6 @@ jobs:
     steps:
     - name: pseudo test
       run: ls
-
-  #containerize:
-  #  runs-on: ubuntu-latest
-    
-  #  steps:
-  #  - name: build container from image
-  #    working-directory: ./cpp-streamer/
-  #    run: docker build -t cpp_streamer_app .
   
   push:
     runs-on: ubuntu-latest
