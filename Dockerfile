@@ -26,4 +26,4 @@ RUN mkdir -p build && \
 
 # Default command runs the app
 WORKDIR /app/build
-CMD ["./MyImageCVApp"]
+CMD ["./MyStreamerApp"]
